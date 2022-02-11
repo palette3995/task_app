@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Schedule</title>
+    <title>Lessonapp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,31 @@
   </head>
 
   <body>
+    <header>
+      <h1>Ruby on rails スケジュール管理アプリ</h1>
+    </header>
     <%= yield %>
+    <footer>
+      <h1 id = "view_time" ></h1>
+      <% case controller.action_name %>
+      <% when "index" %>
+      <h1>スケジュール合計: <%= @sum %></h1>
+      <% else %>
+
+      <% end %>
+    </footer>
+    <script type="text/javascript">
+      document.getElementById("view_time").innerHTML = getNow();
+
+      function getNow() {
+	      var now = new Date();
+	      var year = now.getFullYear();
+	      var mon = now.getMonth()+1;
+	      var day = now.getDate();
+
+        var s = "現在の日時:" + year + "年" + mon + "月" + day + "日" ;
+	      return s;
+      }
+    </script>
   </body>
 </html>
