@@ -1,0 +1,74 @@
+header {
+     width: 100%;
+     padding: 15px;
+     margin-bottom: 30px;
+     background-color: #c52f24;
+}
+
+footer {
+     width: 100%;
+     padding: 15px;
+     margin-top: 30px;
+     background-color: #c52f24;
+}
+
+.notice {
+     background-color: #FF9999;
+     padding: 5px;
+}
+
+table {
+  border: solid 1px black;
+}
+
+table th {
+     background-color: #FF9999;
+     padding: 10px 20px;
+     border: solid 1px black;
+}
+
+table td {
+     background-color: #FFCCCC;
+     padding: 10px 20px;
+     text-align: center;
+     border: solid 1px black;
+}
+
+.notice {
+     background-color: #FFCC99;
+     padding: 5px;
+}
+
+h1 {
+  color: white;
+  display: inline;
+}
+
+.memo {
+  margin-bottom: 30px;
+}
+
+.links-field {
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.memo-cotent {
+  width: 350px;
+  height: 200px;
+  font-size: 16px;
+}
+
+.forms {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  font-size: 16px;
+}
